@@ -46,3 +46,31 @@ endif;
 echo "<hr>";
 
 /***************** Compostos ******************/
+$carros = array("Gol","Uno","Camaro", 12, 20.6, true);
+var_dump($carros);
+
+// object
+class Cliente {
+    public $nome;
+    public function atribuirNome($nome) {
+        $this->$nome = $nome;
+    }
+}
+
+$cliente = new Cliente();
+$cliente->atribuirNome("Rodrigo");
+var_dump($cliente);
+
+if(is_object($cliente)):
+    echo "É um objeto";
+else:
+    echo "Não é um objeto";
+endif;
+echo "<hr>";
+
+/********** Especiais ************/
+// NULL
+$cidade = NULL;
+var_dump($cidade);
+
+// Resource
